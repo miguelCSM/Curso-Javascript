@@ -10,6 +10,6 @@ var i = 1;
 
 // Al menos se ejecuta una vez
 do {
-    alert("ya tuvimos nuestro primer loop inifito");
+    document.write("<p> Hola" ,i,"</p>");
     i++;
-} while (i<=3);
+} while (i<=20);
