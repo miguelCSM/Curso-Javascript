@@ -1,4 +1,6 @@
-var opt = "z";
+var opt = prompt("Qué opción desea seleccionar?");
+
+console.log(opt);
 
 switch(opt){
     case "a":
