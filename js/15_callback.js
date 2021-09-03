@@ -3,17 +3,21 @@ document.write("<h1>Callbacks</h1>")
 puede recibir funciones con parametros, así mismo procesos asincronos"
 */
 
-function calcular(datoA,datoB, sumarCB){
-    
-    var suma = datoA+datoB;
 
-    sumarCB(suma);
+function calculadora(num1, num2,sumaShow,sumaMultiplo) {
+    var suma= num1+num2;
+    var resta = num1-num2;
 
+    sumaShow(suma);
+    sumaMultiplo(suma);
+
+    return suma;
 }
 
-calcular(2,3,function(){
-    console.log("suma: ")
-})
-
-/* Realizar un mapa mental del funcionamiento de un callback y colocar un ejemplo ilustrativo 
-Entrega de forma individual */
+calculadora(5,2,function(dato) {
+    console.log("suma = ",dato); //Logicas nuevas
+},
+function (dato) {
+    console.log("suma multiplo =",dato*2)
+}
+)
